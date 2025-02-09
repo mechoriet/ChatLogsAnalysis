@@ -82,8 +82,6 @@ export default function MainPanel() {
         <ChannelTable
           channels={channels}
           fetchChannels={fetchChannels}
-          setTicketID={setTicketID}
-          setIsPolling={setIsPolling}
         />
       </Group>
     </Stack>

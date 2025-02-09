@@ -1,3 +1,4 @@
+"use client"
 import { useState } from 'react';
 import { login } from '@/api/authHelpers';
 
@@ -5,7 +6,7 @@ const LoginPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         try {
             await login(username, password);

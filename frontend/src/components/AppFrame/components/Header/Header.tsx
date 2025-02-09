@@ -1,7 +1,7 @@
 import { ThemeToggle } from "@/components/ThemeToggle/ThemeToggle";
-import { Burger, Button, Group, HoverCard, UnstyledButton, Text } from "@mantine/core";
+import { Burger, Group, HoverCard, UnstyledButton } from "@mantine/core";
 import styles from './Header.module.css';
-import { IconChevronCompactDown, IconChevronDown } from "@tabler/icons-react";
+import { IconChevronDown } from "@tabler/icons-react";
 
 interface HeaderProps {
     opened: boolean;
