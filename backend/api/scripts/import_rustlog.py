@@ -26,7 +26,7 @@ def import_rustlog(repo_name: str, channel_name: str, start_date: datetime, end_
 
     for date in date_list:
         try:
-            link = f"http://{repo_name}/channel/{channel_name}/{date}"
+            link = f"https://{repo_name}/channel/{channel_name}/{date}"
             response = requests.get(link, timeout=3)
 
             # Define the file path and name
